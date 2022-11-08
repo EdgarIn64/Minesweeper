@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <title>Buscaminas</title>
+    
+    <link rel="icon" type="image/png" href="img/mina.webp"/>
+    <link rel="stylesheet" type="text/css" href="buscaminas.css">
+    <script src="buscaminas.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <div id="izquierda">
+        <img src="img/mina.webp" id="contador_minas">
+        <label id="contadorMinas">-</label>
+      </div>
+      <h1>Buscaminas</h1>
+      <div id="elegir">
+        <label for="columnas">Columnas</label>
+        <select id="columnas">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7" selected>7</option>
+        </select>
+        <label for="filas">  Filas</label>
+        <select id="filas">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7" selected>7</option>
+        </select>
+        <button id="form" onClick="establecerValores()">Elegir</button>
+    </div>
+    </header>
+    
+  <section id="fin" hidden>
+    <div id="felicidades">
+      <h1>FELICIDADES</h1>
+      <h1 id="cerrar" onClicK="cerrar();">X</h1><br>
+      <img src="img/fuego.png">
+      <img src="img/bien.png">
+      <img src="img/fuego.png">
+    </div>
+    <div id="lastima" hidden>
+      <h1>Lastima, perdiste</h1>
+      <h1 id="cerrar" onClicK="cerrar();">X</h1><br>
+      <img src="img/muerte.png">
+      <img src="img/mal.png">      
+	<img src="img/muerte.png">
+    </div>
+  </section>
+
+  <p id="abrir" onClicK="abrir();" hidden>Ver <br>mensaje</p>
+
+  <p id="reset" onClick="window.location.reload(false);">Reiniciar</p>
+
+  <img src="img/explosion.png" id="kaboom" hidden>
+
+  <section id="juego">
+  <div id="fila_a">
+    <button id="a1" onClick="mostrar('a', 1)"></button>
+    <img id="img_a1" src="img/0.png" hidden>
+    
+    <button id="a2" onClick="mostrar('a', 2)"></button>
+    <img id="img_a2" src="img/0.png" hidden>
+    
+    <button id="a3" onClick="mostrar('a', 3)"></button>
+    <img id="img_a3" src="img/0.png" hidden>
+    
+    <button id="a4" onClick="mostrar('a', 4)"></button>
+    <img id="img_a4" src="img/0.png" hidden>
+    
+    <button id="a5" onClick="mostrar('a', 5)"></button>
+    <img id="img_a5" src="img/0.png" hidden>
+    
+    <button id="a6" onClick="mostrar('a', 6)"></button>
+    <img id="img_a6" src="img/0.png" hidden>
+    
+    <button id="a7" onClick="mostrar('a', 7)"></button>
+    <img id="img_a7" src="img/0.png" hidden>
+    
+    <br>
+  </div>
+  
+  <div id="fila_b">
+    <button id="b1" onClick="mostrar('b', 1)"></button>
+    <img id="img_b1" src="img/0.png" hidden>
+    
+    <button id="b2" onClick="mostrar('b', 2)"></button>
+    <img id="img_b2" src="img/0.png" hidden>
+    
+    <button id="b3" onClick="mostrar('b', 3)"></button>
+    <img id="img_b3" src="img/0.png" hidden>
+    
+    <button id="b4" onClick="mostrar('b', 4)"></button>
+    <img id="img_b4" src="img/0.png" hidden>
+    
+    <button id="b5" onClick="mostrar('b', 5)"></button>
+    <img id="img_b5" src="img/0.png" hidden>
+    
+    <button id="b6" onClick="mostrar('b', 6)"></button>
+    <img id="img_b6" src="img/0.png" hidden>
+    
+    <button id="b7" onClick="mostrar('b', 7)"></button>
+    <img id="img_b7" src="img/0.png" hidden>
+    
+    <br>
+  </div>
+  
+  <div id="fila_c">
+    <button id="c1" onClick="mostrar('c', 1)"></button>
+    <img id="img_c1" src="img/0.png" hidden></img>
+    
+    <button id="c2" onClick="mostrar('c', 2)"></button>
+    <img id="img_c2" src="img/0.png" hidden></img>
+    
+    <button id="c3" onClick="mostrar('c', 3)"></button>
+    <img id="img_c3" src="img/0.png" hidden></img>
+    
+    <button id="c4" onClick="mostrar('c', 4)"></button>
+    <img id="img_c4" src="img/0.png" hidden></img>
+    
+    <button id="c5" onClick="mostrar('c', 5)"></button>
+    <img id="img_c5" src="img/0.png" hidden></img>
+    
+    <button id="c6" onClick="mostrar('c', 6)"></button>
+    <img id="img_c6" src="img/0.png" hidden>
+    
+    <button id="c7" onClick="mostrar('c', 7)"></button>
+    <img id="img_c7" src="img/0.png" hidden>
+    
+    <br>
+  </div>
+  
+  <div id="fila_d">
+    <button id="d1" onClick="mostrar('d', 1)"></button>
+    <img id="img_d1" src="img/0.png" hidden></img>
+    
+    <button id="d2" onClick="mostrar('d', 2)"></button>
+    <img id="img_d2" src="img/0.png" hidden></img>
+    
+    <button id="d3" onClick="mostrar('d', 3)"></button>
+    <img id="img_d3" src="img/0.png" hidden></img>
+    
+    <button id="d4" onClick="mostrar('d', 4)"></button>
+    <img id="img_d4" src="img/0.png" hidden></img>
+    
+    <button id="d5" onClick="mostrar('d', 5)"></button>
+    <img id="img_d5" src="img/0.png" hidden></img>
+    
+    <button id="d6" onClick="mostrar('d', 6)"></button>
+    <img id="img_d6" src="img/0.png" hidden>
+    
+    <button id="d7" onClick="mostrar('d', 7)"></button>
+    <img id="img_d7" src="img/0.png" hidden>
+    
+    <br>
+  </div>
+  
+  <div id="fila_e">
+    <button id="e1" onClick="mostrar('e', 1)"></button>
+    <img id="img_e1" src="img/0.png" hidden></img>
+    
+    <button id="e2" onClick="mostrar('e', 2)"></button>
+    <img id="img_e2" src="img/0.png" hidden></img>
+    
+    <button id="e3" onClick="mostrar('e', 3)"></button>
+    <img id="img_e3" src="img/0.png" hidden></img>
+    
+    <button id="e4" onClick="mostrar('e', 4)"></button>
+    <img id="img_e4" src="img/0.png" hidden></img>
+    
+    <button id="e5" onClick="mostrar('e', 5)"></button>
+    <img id="img_e5" src="img/0.png" hidden></img>  
+    
+    <button id="e6" onClick="mostrar('e', 6)"></button>
+    <img id="img_e6" src="img/0.png" hidden>
+    
+    <button id="e7" onClick="mostrar('e', 7)"></button>
+    <img id="img_e7" src="img/0.png" hidden> 
+    
+    <br>
+  </div>
+  
+  <div id="fila_f">
+    <button id="f1" onClick="mostrar('f', 1)"></button>
+    <img id="img_f1" src="img/0.png" hidden></img>
+    
+    <button id="f2" onClick="mostrar('f', 2)"></button>
+    <img id="img_f2" src="img/0.png" hidden></img>
+    
+    <button id="f3" onClick="mostrar('f', 3)"></button>
+    <img id="img_f3" src="img/0.png" hidden></img>
+    
+    <button id="f4" onClick="mostrar('f', 4)"></button>
+    <img id="img_f4" src="img/0.png" hidden></img>
+    
+    <button id="f5" onClick="mostrar('f', 5)"></button>
+    <img id="img_f5" src="img/0.png" hidden></img>  
+    
+    <button id="f6" onClick="mostrar('f', 6)"></button>
+    <img id="img_f6" src="img/0.png" hidden>
+    
+    <button id="f7" onClick="mostrar('f', 7)"></button>
+    <img id="img_f7" src="img/0.png" hidden> 
+    
+    <br>
+  </div>
+  
+  <div id="fila_g">      
+    <button id="g1" onClick="mostrar('g', 1)"></button>
+    <img id="img_g1" src="img/0.png" hidden></img>
+    
+    <button id="g2" onClick="mostrar('g', 2)"></button>
+    <img id="img_g2" src="img/0.png" hidden></img>
+    
+    <button id="g3" onClick="mostrar('g', 3)"></button>
+    <img id="img_g3" src="img/0.png" hidden></img>
+    
+    <button id="g4" onClick="mostrar('g', 4)"></button>
+    <img id="img_g4" src="img/0.png" hidden></img>
+    
+    <button id="g5" onClick="mostrar('g', 5)"></button>
+    <img id="img_g5" src="img/0.png" hidden></img>  
+    
+    <button id="g6" onClick="mostrar('g', 6)"></button>
+    <img id="img_g6" src="img/0.png" hidden>
+    
+    <button id="g7" onClick="mostrar('g', 7)"></button>
+    <img id="img_g7" src="img/0.png" hidden> 
+  </div>  
+  </section>
+
+  </body>
+
+</html>
