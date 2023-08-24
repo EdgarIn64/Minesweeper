@@ -1,6 +1,8 @@
-# buscaminas
-Buscaminas sencillo creado con HTML, CSS, JS.
-Sencillo con iconos grandes.
-Se puede modificar la cantidad de casillas, elegiendo entre 4 a 7 filas y columnas.
-La cantidad de minas se modifica automaticamente dependiendo de la cantidad total de casillas.
-Cada nueva partida diferente a la anterior
+# Buscaminas
+Buscaminas con tamaño ajustable.
+
+# Page's Link
+https://edgarin64.github.io/buscaminas/
+
+# Screenshot
+![Buscaminas](https://github.com/EdgarIn64/buscaminas/assets/79272954/e75ab1a0-fff7-4868-8822-5273edc70437)
