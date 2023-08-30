@@ -1,142 +1,142 @@
 body {
-  text-align: center;
-  min-width: 700px;
+	text-align: center;
+	min-width: 700px;
 }
 
 header {
-  background: #9a9abb; 
-  margin: 5px;
+	background: #9a9abb; 
+	margin: 5px;
 }
 
 h1 {
-  font-size: 60px;
-  display: inline;
+	font-size: 60px;
+	display: inline;
 }
 
 img{
-  width: 90px;
-  height: 87px;
-  margin: 0px;
+	width: 90px;
+	height: 87px;
+	margin: 0px;
 }
 
 img#contador_minas {
-  width: 70px;
-  height: 70px;
+	width: 70px;
+	height: 70px;
 }
 
 img#kaboom {
-  position: absolute;
-  top: 110px;
-  left: 20%;
-  height: 700px;
-  width: 700px;  
+	position: absolute;
+	top: 110px;
+	left: 20%;
+	height: 700px;
+	width: 700px;  
 }
 
 button {
-  margin-bottom: 4px;
-  width: 90px;
-  height: 90px;
+	margin-bottom: 4px;
+	width: 90px;
+	height: 90px;
 }
 
 #elegir{
-  margin-left: 10%;
-  display: inline;
+	margin-left: 10%;
+	display: inline;
 }
 
 label{
-  font-size: 40px;
+	font-size: 40px;
 }
 
 select {
-  font-size: 25px;
+	font-size: 25px;
 }
 
 #elegir button {
-  height: 55px;
-  width: 100px;
-  background: rgb(205,143,205);
-  font-size: 30px;
-  margin-left: 10px;
-  border: 2px solid rgb(205,143,205);
-  border-radius: 15px;
-  cursor: pointer;
+	height: 55px;
+	width: 100px;
+	background: rgb(205,143,205);
+	font-size: 30px;
+	margin-left: 10px;
+	border: 2px solid rgb(205,143,205);
+	border-radius: 15px;
+	cursor: pointer;
 }
 
 #elegir button:hover {
-  filter: brightness(110%);
+	filter: brightness(110%);
 }
 
 div#izquierda {
-  margin-right: 10%;
-  display: inline;
+	margin-right: 10%;
+	display: inline;
 }
 
 
 #fin img {
-  margin-top: 5%;
-  max-width: 200px;
-  max-height: 310px;
-  width: 30%;
-  height: 52%;
+	margin-top: 5%;
+	max-width: 200px;
+	max-height: 310px;
+	width: 30%;
+	height: 52%;
 }
 
 #fin {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  width: 64%;
-  min-width: 600px;
-  height: 54%;
-  min-height: 320px;
-  background: #ffde89;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px #efce79;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	width: 64%;
+	min-width: 600px;
+	height: 54%;
+	min-height: 320px;
+	background: #ffde89;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px 3px #efce79;
 }
 
 #cerrar {
-  float: right;
-  font-size: 50px;
-  cursor: pointer;
-  margin-top: 0px;
-  margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+	float: right;
+	font-size: 50px;
+	cursor: pointer;
+	margin-top: 0px;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #cerrar:hover {
-  background: #ff8a8a;
+	background: #ff8a8a;
 }
 
 #abrir{
-  position: absolute;
-  bottom: 10;
-  right: 10;
-  font-size: 36px;
-  width: 170px;
-  height: 90px;
-  background: #ffde89;
-  border: 1px solid #ffde89;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 3px 3px 3px 3px #efce79;
+	position: absolute;
+	bottom: 10;
+	right: 10;
+	font-size: 36px;
+	width: 170px;
+	height: 90px;
+	background: #ffde89;
+	border: 1px solid #ffde89;
+	border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px 3px #efce79;
 }
 
 #abrir:hover, #reset:hover {
-  filter: brightness(105%);
+	filter: brightness(105%);
 }
 
 #reset {
-  position: absolute;
-  bottom: 10;
-  left: 10;
-  font-size: 36px;
-  width: 150px;
-  height: 45px;
-  background: #ffde89;
-  border: 1px solid #ffde89;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 3px 3px 3px 3px #efce79;
+	position: absolute;
+	bottom: 10;
+	left: 10;
+	font-size: 36px;
+	width: 150px;
+	height: 45px;
+	background: #ffde89;
+	border: 1px solid #ffde89;
+	border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px 3px #efce79;
 }
